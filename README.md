@@ -52,41 +52,41 @@ The transistor stage supplies the load current while allowing the op-amp to cont
 
 The 12.6 Vrms transformer secondary corresponds to a peak voltage of:
 
-\[
+$$
 V_{2(pk)} = \sqrt{2}(12.6) \approx 17.82\text{ V}
-\]
+$$
 
 Accounting for two conducting diodes in the bridge:
 
-\[
+$$
 V_{C(max)} \approx 17.82 - 2(0.7)
-\]
+$$
 
-\[
+$$
 V_{C(max)} \approx 16.42\text{ V}
-\]
+$$
 
 Using the specified maximum ripple:
 
-\[
+$$
 V_{C(min)} = 16.42 - 3.5
-\]
+$$
 
-\[
+$$
 V_{C(min)} \approx 12.92\text{ V}
-\]
+$$
 
 The calculated minimum filter capacitance was approximately:
 
-\[
+$$
 C_{F(min)} \approx 759\ \mu\text{F}
-\]
+$$
 
 A standard:
 
-\[
+$$
 \boxed{C_F = 1000\ \mu\text{F}}
-\]
+$$
 
 capacitor was selected.
 
@@ -94,10 +94,10 @@ capacitor was selected.
 
 For a maximum output near 9 V using the 6 V reference:
 
-\[
+$$
 V_{OUT} =
 \left(1+\frac{R_3}{R_4}\right)V_{REF}
-\]
+$$
 
 Using:
 
@@ -106,9 +106,9 @@ Using:
 
 gives a closed-loop gain of approximately:
 
-\[
+$$
 1+\frac{5.1}{10}=1.51
-\]
+$$
 
 resulting in a maximum output near 9 V.
 
@@ -133,9 +133,9 @@ resulting in a maximum output near 9 V.
 
 Rather than verifying the circuit at a single operating point, the load resistance was swept across:
 
-\[
+$$
 R_L = 100,\ 50,\ 33.33,\ 25\ \Omega
-\]
+$$
 
 to evaluate regulation as load current increased.
 
@@ -154,15 +154,15 @@ At the maximum voltage setting, LTspice produced the following steady-state resu
 
 Across approximately **90.8 mA → 363.1 mA**, the average output changed by only about:
 
-\[
+$$
 \boxed{3.5\text{ mV}}
-\]
+$$
 
 while the largest simulated rectifier ripple was:
 
-\[
+$$
 \boxed{2.45\text{ V}_{pp}}
-\]
+$$
 
 which remains below the **3.5 Vpp design limit**.
 
@@ -187,9 +187,9 @@ Measured average output:
 
 The total simulated output variation across these load conditions was approximately:
 
-\[
+$$
 \boxed{0.20\text{ mV}}
-\]
+$$
 
 demonstrating stable closed-loop regulation at the lower end of the adjustment range.
 
@@ -211,25 +211,25 @@ As load current increases, the filter capacitor discharges more rapidly between 
 
 The simulation therefore shows the expected relationship:
 
-\[
+$$
 I_L \uparrow
 \quad\Rightarrow\quad
 \Delta V_{RECT} \uparrow
-\]
+$$
 
 The highest measured rectifier ripple occurred at the heaviest tested load:
 
-\[
+$$
 R_L=25\ \Omega
-\]
+$$
 
-\[
+$$
 I_L\approx363\text{ mA}
-\]
+$$
 
-\[
+$$
 V_{RECT,ripple}\approx2.45\text{ V}_{pp}
-\]
+$$
 
 ---
 
